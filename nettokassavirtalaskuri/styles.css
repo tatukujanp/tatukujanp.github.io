@@ -90,6 +90,19 @@ button:hover {
 }
 
 
+@media (max-width: 768px){
+    .results {
+        display: none;
+    }
+
+    .nettokassavirta {
+        margin: 30px 0;
+    }
+
+    button:hover {
+        background-color: white;
+    }
+}
 
 
 
