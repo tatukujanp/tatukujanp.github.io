@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nettokassavirtalaskuri</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        
+        <div class="container">
+            <div class="laskuri">
+                    <input type="text" placeholder="Vuokra" id="vuokra" name="vuokra">€/kk<br>
+                    <input type="text" placeholder="Vastike" id="vastike">€/kk<br>
+                    <input type="text" placeholder="Lainanlyhennys" id="lyhennys">€/kk<br>
+                    <input type="text" placeholder="Lainan korko" id="korko">€/kk<br>
+                    <input type="text" placeholder="Yllättävät kulut" id="yllattavat">€/kk<br>
+                    <input type="text" placeholder="Vesi ja muut kulut" id="muut">€/kk<br>
+                    <button type="submit" value="Laske"id="laske">Laske</button>
+                    <button class="reset">Nollaa</button>
+            </div>
+
+            <div class="results">
+                <div class="ennen-veroja">
+                    <h2>Kassavirta ennen veroja:</h2>
+                    <span class="brutto">0</span>
+                </div>
+                <div class="vero">
+                    <h2>Verot:</h2>
+                    <span class="verot">0</span>
+                </div>
+                <div class="nettokassavirta">
+                    <h2>Nettokassavirta:</h2>
+                    <span class="netto">0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
