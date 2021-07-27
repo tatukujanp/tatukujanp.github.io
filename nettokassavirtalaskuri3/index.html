@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nettokassavirtalaskuri</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        
+        <div class="container">
+            <div class="laskuri">
+                    <label for="vuokra">Vuokratulot</label><br>
+                    <input type="text" placeholder="€/kk" id="vuokra" name="vuokra"><br>
+                    <label for="vastike">Vastike</label><br>
+                    <input type="text" placeholder="€/kk" id="vastike"> <br>
+                    <label for="lyhennys">Lainanlyhennys</label><br>
+                    <input type="text" placeholder="€/kk" id="lyhennys"><br>
+                    <label for="korko">Lainan korko</label><br>
+                    <input type="text" placeholder="€/kk" id="korko"> <br>
+                    <label for="yllattavat">Yllättävät kulut</label><br>
+                    <input type="text" placeholder="€/kk" id="yllattavat"> <br>
+                    <button type="submit" value="Laske"id="laske">Laske</button>
+                    <button class="reset">Nollaa</button>
+            </div>
+
+            <div class="results">
+                <div class="ennen-veroja">
+                    <h2>Kassavirta:</h2>
+                    <span class="brutto">0</span>
+                </div>
+                <div class="vero">
+                    <h2>Verot:</h2>
+                    <span class="verot">0</span>
+                </div>
+            </div>
+            <div class="nettokassavirta">
+                <h2>Nettokassavirta:</h2>
+                <span class="netto">0</span>
+            </div>
+
+            <button id="myBtn">Avaa tarkemmat laskelmat</button>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Kuukaudessa</th>
+                    <th>Vuodessa</th>
+                </tr>
+                <tr>
+                    <td class="heading">Vuokratulot</td>
+                    <td class="tbl-vuokra">1000</td>
+                    <td class="tbl-vuokra-v">12000</td>
+                </tr>
+                <tr>
+                    <td class="heading">Vastike</td>
+                    <td class="tbl-vastike">1000</td>
+                    <td class="tbl-vastike-v">12000</td>
+                </tr>
+                <tr>
+                    <td class="heading">Lainanlyhennys</td>
+                    <td class="tbl-lyhennys">1000</td>
+                    <td class="tbl-lyhennys-v">12000</td>
+                </tr>
+                <tr>
+                    <td class="heading">Lainan korko</td>
+                    <td class="tbl-korko">1000</td>
+                    <td class="tbl-korko-v">12000</td>
+                </tr>
+                <tr>
+                    <td class="heading tbl-broder-top">Yllättävät kulut</td>
+                    <td class="tbl-yllattavat tbl-broder-top">1000</td>
+                    <td class="tbl-yllattavat-v tbl-broder-top">12000</td>
+                </tr>
+                <tr>
+                    <td class="heading">Bruttokassavirta</td>
+                    <td class="tbl-brutto">1000</td>
+                    <td class="tbl-brutto-v">12000</td>
+                </tr>
+                <tr>
+                    <td class="heading">Verot</td>
+                    <td class="tbl-verot">1000</td>
+                    <td class="tbl-verot-v">12000</td>
+                </tr>
+                <tr>
+                    <td class="heading nettokassa">Nettokassavirta</td>
+                    <td class="tbl-netto nettokassa">1000</td>
+                    <td class="tbl-netto-v nettokassa">12000</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
